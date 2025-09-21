@@ -1,6 +1,4 @@
-def main():
-    print("Hello from aoj!")
-
-
-if __name__ == "__main__":
-    main()
+num = list(map(int, input().split()))
+area = num[0]*num[1]
+peri = 2*num[0] + 2*num[1]
+print(f"{area} {peri}")
