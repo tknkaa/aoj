@@ -1,4 +1,9 @@
-num = list(map(int, input().split()))
-area = num[0]*num[1]
-peri = 2*num[0] + 2*num[1]
-print(f"{area} {peri}")
+pair = list(map(int, input().split(" ")))
+pair = sorted(pair)
+ans = ""
+for i in range(len(pair)):
+    if i != len(pair) - 1:
+        ans += str(pair[i]) + " "
+    else:
+        ans += str(pair[i])
+print(ans)
